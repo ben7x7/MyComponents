@@ -1,15 +1,49 @@
 ---
-title: Le Wagon - Middleman
+title: Home Page
 ---
 
-<div id="home">
-  <div class="home-content">
-    <%= image_tag "logo.png", width: "200" %>
-    <p>
-      Middleman is now running!
-    </p>
-    <p class="about">
-      <%= link_to "More about this template", "about.html" %>
-    </p>
+<div id="home-page">
+  <div class="banner-top">
+    <div class="home-title text-center">
+      <h1>Welcome to the coding jungle !</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae feugiat ipsum. Proin blandit interdum nisl, id bibendum leo ultrices vitae.</p>
+    </div>
+    <%= link_to "GET STARTED", "/about.html", class: "home-link" %>
+  </div>
+  <div class="banner-down">
+    <div class="wrap-vignettes">
+      <div class="vignette">
+        <div class="picture">
+          <%= image_tag 'html.png', height: 80 %>
+        </div>
+        <div class="text-center">
+          <p>Quisque iaculis venenatis lorem id semper. Duis viverra fermentum imperdiet.</p>
+        </div>
+      </div>
+      <div class="vignette">
+        <div class="picture">
+          <%= image_tag 'css.png', height: 80 %>
+        </div>
+        <div class="text-center">
+          <p>Proin mi tortor, aliquam quis mauris ac, cursus dictum ligula. Nam eget pharetra lacus.</p>
+        </div>
+      </div>
+      <div class="vignette">
+        <div class="picture">
+          <%= image_tag 'js.png', height: 80 %>
+        </div>
+        <div class="text-center">
+          <p>Maecenas rhoncus pulvinar leo sed blandit. Proin sollicitudin iaculis nisl ultrices.</p>
+        </div>
+      </div>
+      <div class="vignette">
+        <div class="picture">
+          <%= image_tag 'rails.png', height: 80 %>
+        </div>
+        <div class="text-center">
+          <p>Donec sed ultrices diam, ut ullamcorper nisi. Suspendisse id rhoncus nibh, orci.</p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

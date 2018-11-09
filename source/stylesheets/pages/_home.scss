@@ -1,17 +1,44 @@
-#home {
-  background-color: #D23333;
+.banner-top {
+  background-image: linear-gradient(-225deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.7) 30%), image-url("coding-home.png");
+  background-size: cover;
+  height: 60vh;
   color: white;
-  height: 100vh;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: space-around;
-  text-align: center;
-  p {
-    margin-top: 1.5em;
-  }
-  a {
-    color: rgba(0,0,0,0.4);
+}
+.home-title {
+  width: 50%;
+  h1 {
     font-weight: bold;
-    font-size: 16px;
+    font-size: 42px;
   }
+}
+.home-link {
+  text-decoration: none !important;
+  color: white !important;
+  font-weight: bold;
+  margin-top: 2em;
+  padding: 1em 1em;
+  border: solid 1px white;
+  border-radius: 5px;
+}
+.banner-down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrap-vignettes {
+  display: flex;
+  justify-content: space-around;
+  margin: 2em 2em;
+}
+.vignette {
+  width: 200px;
+  text-align: center;
+  margin: 0 2em;
+}
+.picture {
+  padding-bottom: 1em;
 }
