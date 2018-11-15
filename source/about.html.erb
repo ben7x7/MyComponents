@@ -1,24 +1,69 @@
 ---
-title: Le Wagon - Middleman - About
+title: Navbar | Footer
 ---
 
-<div id="about">
-  <div class="about-content">
-    <h1>This template was built with <i class="fas fa-heart"></i> by</h1>
-    <ul class="list-inline">
-      <% data.users.each do |user| %>
-        <li>
-          <% link_to "https://kitt.lewagon.com/alumni/#{user.github_nickname}", target: "_blank" do %>
-            <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{user.github_nickname}", class: "img-circle" %>
-          <% end %>
-          <h2><%= user.name %></h2>
-          <p>
-            <% link_to "https://github.com/#{user.github_nickname}", target: "_blank" do %>
-              <i class="fab fa-github"></i> <%= user.github_nickname %>
-            <% end %>
-          </p>
-        </li>
+<div id="container-nav">
+  <!--   navbar-template  -->
+  <div class="navbar-template">
+    <div class="navbar-template-logo">
+      <%= image_tag 'Logo.png' %>
+    </div>
+    <div class="navbar-template-brand">
+      <h4>template.com</h4>
+    </div>
+    <div class="navbar-template-item">
+      <%= link_to "Home", "/index.html", class: "navbar-template-link"%>
+      <%= link_to "Links", "/link.html", class: "navbar-template-link"%>
+      <%= link_to "Table", "/table.html", class: "navbar-template-link"%>
+      <div class="dropdown">
+        <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+        <ul class="dropdown-menu navbar-template-dropdown-menu">
+          <li><a href="#">Some mobile link</a></li>
+          <li><a href="#">Other one</a></li>
+          <li><a href="#">Other one</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- navbar-option -->
+  <div class="navbar-option">
+    <div class="navbar-option-logo">
+      <% link_to "#" do %>
+        <%= image_tag "Logo.png" %>
       <% end %>
+    </div>
+    <div class="navbar-option-item">
+      <% link_to "#" do %>
+        <i class="fa fa-sign-in-alt"></i>
+      <% end %>
+    </div>
+  </div>
+  <!--  navbar-theme -->
+
+  <!-- footer-design -->
+  <div class="footer-design">
+    <ul>
+      <li><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fab fa-google-plus-g" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
     </ul>
+  </div>
+
+  <!-- footer-classic -->
+  <div class="footer-template">
+    <div class="footer-template-header">
+      <h5>Follow us :</h5>
+    </div>
+    <div class="footer-template-links">
+      <ul>
+        <li><a href="#"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fab fa-google-plus-g" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
   </div>
 </div>
