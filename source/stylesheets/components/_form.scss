@@ -1,0 +1,34 @@
+.wrap-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#fs-frm-inputs {
+  border: none !important;
+  display: flex;
+}
+
+#name,
+#phone,
+#email,
+#msg {
+  border-top: none;
+  border-right: none;
+  border-left:none;
+  border-bottom: 1px solid #848688;
+  background-color: #e0ebfb;
+  margin: 30px auto;
+  flex: 1;
+  font-size: 18px;
+  width: 60%;
+}
+
+#button {
+  margin: 15px auto;
+  font-size: 24px;
+  display: block;
+  background-color: #e0ebfb;
+  border-radius: 5px;
+  border: 1px solid #848688;
+}
+
