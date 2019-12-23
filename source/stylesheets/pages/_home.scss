@@ -1,45 +1,43 @@
-.banner-top {
-  background-image: linear-gradient(-225deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.7) 30%), image-url("coding-home.png");
-  background-size: cover;
-  height: 60vh;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.home-title {
-  width: 50%;
-  h1 {
-    font-weight: bold;
-    font-size: 42px;
-    color: white !important;
-  }
-}
-.home-link {
-  text-decoration: none !important;
-  color: white !important;
-  font-weight: bold;
-  margin-top: 2em;
-  padding: 1em 1em;
-  border: solid 1px white;
-  border-radius: 5px;
-}
-.banner-down {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.wrap-vignettes {
-  display: flex;
-  justify-content: space-around;
-  margin: 2em 2em;
-}
-.vignette {
-  width: 200px;
+.section-two {
+  margin: 75px auto;
   text-align: center;
-  margin: 0 2em;
+  font-size: 21px;
+  width: 50%;
 }
-.picture {
-  padding-bottom: 1em;
+
+.section-three,
+.section-six {
+  margin: 50px auto;
+  padding: 50px 20px;
+  width: 80%;
+  background-color: #e0ebfb;
+  text-align: center;
+}
+
+.title {
+  padding-bottom: 70px;
+  text-align: center;
+}
+
+.title-w h1,
+.title h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.section-four {
+  background-image: image-url("font-color.jpg");
+}
+
+
+.title-w {
+  color: white;
+  width: 50%;
+  padding: 50px 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-five {
+  padding: 50px 0;
 }

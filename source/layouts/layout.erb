@@ -8,16 +8,13 @@
     <!-- Use the title from a page's frontmatter if it has one -->
     <title><%= current_page.data.title %></title>
     <%= stylesheet_link_tag "application" %>
-    <%= javascript_include_tag "application" %>
+
     <%= favicon_tag 'images/favicon.png' %>
-    <link rel="stylesheet" href="animate.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
   </head>
   <body>
     <%= yield %>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+    <%= javascript_include_tag "application" %>
   </body>
 </html>

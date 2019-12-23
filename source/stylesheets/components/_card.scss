@@ -1,0 +1,15 @@
+.wrap-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 340px;
+  box-sizing: border-box;
+  padding: 25px 25px;
+}
+
+
+

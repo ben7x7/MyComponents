@@ -1,0 +1,32 @@
+.wrap-client-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.client-card {
+  width: 220px;
+  padding: 10px;
+  flex: 1;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.client-card img {
+  height: 200px;
+  width: 200px;
+}
+
+.fab,
+.fas {
+  height: 25px;
+  margin-top: 15px;
+  padding: 0 10px;
+  color: #334A69;
+}
+
+a:hover .fab .fas {
+  height: 50px;
+  color: #000000;
+}
+
