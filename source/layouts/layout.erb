@@ -7,14 +7,29 @@
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
     <title><%= current_page.data.title %></title>
-    <%= stylesheet_link_tag "application" %>
 
     <%= favicon_tag 'images/favicon.png' %>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <%= stylesheet_link_tag "application" %>
   </head>
+
   <body>
+
     <%= yield %>
     <%= javascript_include_tag "application" %>
+    <script>
+      jQuery(document).ready(function() {
+        if( !jQuery('html').hasClass('ie8') ) {
+          jQuery('.num').counterUp({
+            delay: 20,
+            time: 1000
+          });
+        }
+      });
+    </script>
+
   </body>
 </html>
